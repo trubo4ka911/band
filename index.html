@@ -181,11 +181,13 @@
       </main>
 
       <footer class="footer text-center py-2">
-        <p>
-          &copy; Muse
-          <?php echo date("Y"); ?>
-        </p>
+        <p>&copy; Muse <span id="currentYear"></span></p>
       </footer>
+      <script>
+        // JavaScript to display the current year
+        document.getElementById("currentYear").textContent =
+          new Date().getFullYear();
+      </script>
     </div>
 
     <!-- Include Bootstrap JS and jQuery (required) -->
